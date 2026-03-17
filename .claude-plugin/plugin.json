@@ -1,5 +1,5 @@
 {
-  "name": "claude-blog-publisher",
+  "name": "blog",
   "version": "1.0.0",
   "description": "Blog Publishing Plugin — Wiki to Jekyll blog conversion with confidentiality filtering",
   "author": { "name": "idean3885" },
