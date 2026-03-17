@@ -1,5 +1,17 @@
 {
-  "namespace": "blog",
-  "repository": "https://github.com/idean3885/claude-blog-publisher.git",
-  "installInstructions": "claude /plugin marketplace add https://github.com/idean3885/claude-blog-publisher.git && claude /plugin install blog"
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-blog-publisher",
+  "description": "Blog Publishing Plugin for Claude Code",
+  "owner": { "name": "idean3885" },
+  "plugins": [
+    {
+      "name": "claude-blog-publisher",
+      "description": "Content to Jekyll blog conversion and post management",
+      "version": "1.0.0",
+      "author": { "name": "idean3885" },
+      "source": "./",
+      "category": "productivity",
+      "tags": ["blog", "publish", "jekyll", "chirpy"]
+    }
+  ]
 }
