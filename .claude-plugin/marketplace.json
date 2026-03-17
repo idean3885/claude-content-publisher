@@ -1,0 +1,5 @@
+{
+  "namespace": "blog",
+  "repository": "https://github.com/idean3885/claude-blog-publisher.git",
+  "installInstructions": "claude /plugin marketplace add https://github.com/idean3885/claude-blog-publisher.git && claude /plugin install blog"
+}
