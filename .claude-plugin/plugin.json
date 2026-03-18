@@ -1,8 +1,8 @@
 {
   "name": "blog",
-  "version": "1.0.0",
-  "description": "Blog Publishing Plugin — Wiki to Jekyll blog conversion with confidentiality filtering",
+  "version": "2.0.0",
+  "description": "Blog Publishing Plugin — Blog writing, Jekyll conversion, and post verification",
   "author": { "name": "idean3885" },
-  "keywords": ["blog", "publish", "jekyll", "chirpy", "wiki-to-blog"],
+  "keywords": ["blog", "write", "publish", "jekyll", "chirpy", "verify"],
   "skills": "./skills/"
 }
