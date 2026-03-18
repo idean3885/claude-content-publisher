@@ -7,7 +7,7 @@
     {
       "name": "blog",
       "description": "Content to Jekyll blog conversion and post management",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "author": { "name": "idean3885" },
       "source": "./",
       "category": "productivity",
