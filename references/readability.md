@@ -476,7 +476,7 @@ PoC 문서는 **결론 선행 + 재현 가능성**이 핵심이다.
 
 | 생성 대상 | 적용 경로 | 비고 |
 |----------|----------|------|
-| 블로그 포스팅 | `/blog:post` Phase 4 | 직접 작성 |
-| 위키 포스팅 | `/write` Step 3 | 블로그 퍼블리시 전제 |
-| 로컬 마크다운 | `/blog:verify` 또는 직접 참조 | 프로젝트 내 `.md` (PoC 문서 등) |
-| 기존 콘텐츠 | `/blog:verify` | 소급 검증 |
+| 블로그 포스팅 | `/content:publish` Phase 4 | 직접 작성 |
+| 위키 포스팅 | `/content:write` Phase 3 | 인라인 검증 |
+| 로컬 마크다운 | `/content:verify` 또는 직접 참조 | 프로젝트 내 `.md` (PoC 문서 등) |
+| 기존 콘텐츠 | `/content:verify` | 소급 검증 (standalone 모드) |

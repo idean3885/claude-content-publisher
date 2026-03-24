@@ -1,15 +1,16 @@
-# claude-blog-publisher
+# claude-content-publisher
 
-Blog Publishing Plugin for Claude Code
+Content Publishing Plugin for Claude Code
 
-콘텐츠를 Jekyll 블로그 포스팅으로 변환 발행하는 Claude Code 플러그인입니다.
+콘텐츠 작성, 검증, Jekyll 블로그 발행을 통합하는 Claude Code 플러그인입니다.
 
 ## 스킬
 
 | 스킬 | 커맨드 | 역할 |
 |------|--------|------|
-| write | `/blog:write` | 블로그 포스팅 작성 및 발행 |
-| verify | `/blog:verify` | 콘텐츠 검증 (품질 3축 + 가독성 24규칙) |
+| write | `/content:write` | 범용 콘텐츠 작성 엔진 (문서 성격 파악, 시리즈 구조, 인라인 검증) |
+| verify | `/content:verify` | 콘텐츠 검증 (품질 3축 + 가독성 24규칙, 이중 모드) |
+| publish | `/content:publish` | Jekyll 블로그 변환 발행 |
 
 ## 참조 문서
 
@@ -24,12 +25,12 @@ Blog Publishing Plugin for Claude Code
 /plugin marketplace add https://github.com/idean3885/claude-blog-publisher.git
 
 # 설치
-/plugin install blog
+/plugin install content
 ```
 
 ## 설정
 
-`/blog:write`는 어떤 디렉토리에서든 실행 가능합니다.
+`/content:publish`는 어떤 디렉토리에서든 실행 가능합니다.
 초회 실행 시 글로벌 설정 파일을 자동 생성합니다.
 
 ```
@@ -44,7 +45,7 @@ Blog Publishing Plugin for Claude Code
 
 ## 설계 원칙
 
-- **결과물과 도구의 분리**: 블로그 레포는 콘텐츠(`_posts/`)만, 이 플러그인은 도구만
+- **대외/사내 분리**: 이 플러그인은 범용 콘텐츠 엔진만 제공, 사내 코드(API, pageId 등)는 toolkit으로 분리
 - **가독성 규칙 원천**: 모든 마크다운 콘텐츠(블로그, 위키, 로컬 `.md`)의 가독성 기준을 이 플러그인이 관리
 - **디렉토리 무관**: 글로벌 설정 기반, 빈 디렉토리에서도 동작
 - **범용성**: 특정 콘텐츠 소스에 종속되지 않음

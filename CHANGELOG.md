@@ -2,6 +2,25 @@
 
 형식: [Semantic Versioning](https://semver.org/)
 
+## [3.0.0] - 2026-03-25
+
+### Breaking Changes
+- 플러그인 리네임: `blog` → `content` (claude-content-publisher)
+- `/blog:write` → `/content:publish` (Jekyll 변환 발행)
+- `/blog:verify` → `/content:verify` (이중 모드: standalone 사후 + inline 사전)
+- NEW: `/content:write` (범용 콘텐츠 작성 엔진)
+
+### Added
+- `content:write` 스킬: 문서 성격 파악, 시리즈 구조, 작성 원칙, 인라인 검증 통합
+- `content:verify` inline 모드: 작성 중 가독성 규칙 즉시 적용
+- `content:publish` 스킬: 구 `/blog:write`를 발행 전용으로 분리
+
+### Changed
+- `content:verify`: 사내 의존 제거 (위키 URL 입력 제거, 본문/파일만 허용)
+
+### Removed
+- 위키 URL/페이지 ID 직접 조회 (오케스트레이터 책임으로 이동)
+
 ## [2.0.0] - 2026-03-19
 
 ### Breaking Changes
