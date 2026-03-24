@@ -1,17 +1,17 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "blog",
-  "description": "Blog Publishing Plugin for Claude Code",
+  "name": "content",
+  "description": "Content Publishing Plugin for Claude Code",
   "owner": { "name": "idean3885" },
   "plugins": [
     {
-      "name": "blog",
-      "description": "Content to Jekyll blog conversion and post management",
-      "version": "2.0.0",
+      "name": "content",
+      "description": "Universal content writing, verification, and Jekyll blog publishing",
+      "version": "3.0.0",
       "author": { "name": "idean3885" },
       "source": "./",
       "category": "productivity",
-      "tags": ["blog", "publish", "jekyll", "chirpy"]
+      "tags": ["content", "write", "verify", "publish", "jekyll", "chirpy"]
     }
   ]
 }
