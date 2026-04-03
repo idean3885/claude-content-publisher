@@ -9,7 +9,7 @@
     {
       "name": "content",
       "description": "Universal content writing, verification, and Jekyll blog publishing",
-      "version": "3.1.0",
+      "version": "2.1.0",
       "author": {
         "name": "idean3885"
       },
