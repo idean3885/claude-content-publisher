@@ -2,6 +2,20 @@
 
 형식: [Semantic Versioning](https://semver.org/)
 
+## [3.2.0] - 2026-04-03
+
+### Added
+- content:verify를 리더빌리티 + 톤의 검증 단일 소스로 명시
+- content:verify 축 2에 저자 톤 검증 3항목 추가 (합쇼체, 주어 생략, 감정어 최소화)
+- content:write에 금지 패턴(4건) + verify 위임 게이트 + 체크포인트 추가
+- content:publish에 금지 패턴(3건) + 변환 입력 게이트 + verify 위임 게이트 + 체크포인트 추가
+- README.md에 릴리스 금지 패턴 추가
+- scripts/release.sh 문서화 (v3.1.1에서 추가)
+
+### Changed
+- content:write Phase 3-2: 리더빌리티 자체 적용 → content:verify(inline) 위임
+- content:publish Phase 4 가독성: 자체 적용 → content:verify(standalone) 위임
+
 ## [3.0.0] - 2026-03-25
 
 ### Breaking Changes
