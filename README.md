@@ -22,7 +22,7 @@ Content Publishing Plugin for Claude Code
 
 ```bash
 # 마켓플레이스 등록
-/plugin marketplace add https://github.com/idean3885/claude-blog-publisher.git
+/plugin marketplace add https://github.com/idean3885/claude-content-publisher.git
 
 # 설치
 /plugin install content
