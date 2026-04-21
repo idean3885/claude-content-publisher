@@ -1,6 +1,6 @@
 {
   "name": "content",
-  "version": "3.9.1",
+  "version": "3.3.0",
   "description": "Content Publishing Plugin — Content writing engine, verification, and Jekyll conversion",
   "author": {
     "name": "idean3885"
